@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "rushi",
+    "email": "rushi@gmail.com",
+    "department": "it",
+    "salary": 312424.0
+  },
+  {
+    "id": 2,
+    "name": "yash",
+    "email": "yash@gmail.com",
+    "department": "ai",
+    "salary": 42424.0
+  },
+  {
+    "id": 3,
+    "name": "kalpesh",
+    "email": "kalpesh@gmail.com",
+    "department": "it",
+    "salary": 1442144.0
+  },
+  {
+    "id": 4,
+    "name": "sohel",
+    "email": "sohel@gmail.com",
+    "department": "mech",
+    "salary": 322424.0
+  },
+  {
+    "id": 5,
+    "name": "swanand",
+    "email": "swanwnd@gmail.com",
+    "department": "civil",
+    "salary": 2422.0
+  }
+]
