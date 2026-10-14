@@ -1,12 +1,48 @@
 # Employee Data Manager
 
-A simple employee management application built as a Python package.
+## Purpose
+
+Employee Data Manager is a Python-based command-line application for managing employee records. Employee information is stored in a JSON file and can be viewed or updated through an interactive menu.
+
+Features include:
+
+- List employees
+- Add employees
+- Email validation
+- Salary validation
+- Department summary reporting
+- Rich-formatted table output
+
+---
+
+## Project Structure
+
+```text
+empmgr-project/
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   └── employees.json
+│
+└── empmgr/
+    ├── __init__.py
+    ├── models.py
+    ├── storage.py
+    ├── validators.py
+    ├── report.py
+    └── cli.py
+```
+
+---
 
 ## Setup
 
 ### Windows
 
-Create virtual environment:
+Create a virtual environment:
 
 ```powershell
 python -m venv venv
@@ -19,7 +55,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run application:
+Run the application:
 
 ```powershell
 python -m empmgr.cli
@@ -27,9 +63,9 @@ python -m empmgr.cli
 
 ---
 
-### macOS/Linux
+### macOS / Linux
 
-Create virtual environment:
+Create a virtual environment:
 
 ```bash
 python3 -m venv venv
@@ -42,11 +78,39 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run application:
+Run the application:
 
 ```bash
 python -m empmgr.cli
 ```
+
+---
+
+## Usage
+
+Start the application:
+
+```bash
+python -m empmgr.cli
+```
+
+Menu:
+
+```text
+=== Employee Manager ===
+1. List employees
+2. Add employee
+3. Quit
+```
+
+### Validation Rules
+
+- Employee name cannot be empty.
+- Email must be valid.
+- Salary must be numeric.
+- Salary cannot be negative.
+
+---
 
 ## Notes
 
@@ -63,6 +127,22 @@ python empmgr/cli.py
 ```
 
 because relative imports may fail.
+
+---
+
+## Dependencies
+
+This project uses:
+
+- rich
+
+Generate requirements file:
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
 
 ## History
 
